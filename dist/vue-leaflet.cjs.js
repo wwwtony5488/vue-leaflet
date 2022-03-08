@@ -2052,7 +2052,7 @@ var script$d = {
     });
 
     vue.onBeforeUnmount(() => {
-      if (blueprint?.leafletRef?.remove) {
+      if (blueprint.leafletRef && blueprint.leafletRef.remove) {
         blueprint.leafletRef.remove();
       }
     });
